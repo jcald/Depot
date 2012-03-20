@@ -1,0 +1,9 @@
+<% @product.orders.each do |order| %>
+<h2>Order <%= order.id %></h2>
+<h3><%= order.name %></h3>
+<p><strong>Address:</strong> <%= order.address %><br>
+	<strong>Email:</strong> <%= order.email %><br>
+	<strong>Payment Type:</strong> <%= order.pay_type %><br>
+	<strong>Created at: </strong> <%= order.created_at %>
+</p>
+<% end %>
