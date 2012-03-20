@@ -10,3 +10,16 @@ es:
         index:
             title_html: "Su catálogo de Pragmatic"
             add_html: "Añadir al carrito"
+    carts:
+        cart:
+            title: "Carrito de la compra"
+            empty: "Vaciar Carrito"
+            checkout: "Comprar"
+    number:
+        currency:
+            format:
+                unit: "$US"
+                precision: 2
+                separator: ","
+                delimiter: "."
+                format: "%n&nbsp;%u"
