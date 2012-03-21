@@ -1,6 +1,9 @@
 <div class="depot_form">
 	<% if flash[:alert] %>
-	<p id="notice"><%= flash[:alert]%></p>
+	<div class="alert alert-block alert-error">
+		<a class"close" data-dissmis="alert">×</a>
+		<strong>Error! </strong><%= flash[:alert]%>
+	</div>
 	<% end %>
 	
 	<%= form_tag({}, {class: "form-background"}) do %>
@@ -11,7 +14,7 @@
 			<%= text_field_tag :name, params[:name], placeholder: "Put you username here please..." %>
 
 			<%= label_tag :password, 'Password:' %>
-			<%= password_field_tag :password, params[:password] %>
+			<%= password_field_tag :password, params[:password], placeholder: "You password here..." %>
 			
 			<%= submit_tag "Login", class: "btn" %>
 			

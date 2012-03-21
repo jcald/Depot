@@ -34,7 +34,7 @@
 			<!-- .span3 -->
 			<div class="span3">
 				<!-- .well -->
-				<div class="well">
+				<div id="cart">
 					<% if @cart %>
 						<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
 							<%= render @cart %>

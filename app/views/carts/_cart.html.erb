@@ -1,12 +1,12 @@
 <div class="cart_title"><%= t('.title') %></div>
-<table>
+<table class="table table-condensed">
 	<%= render(cart.line_items) %>
-	<tr class="total_line">
+	<tr>
 		<td colspan="2">Total</td>
 		<td class="total_cell"><%= number_to_currency(cart.total_price) %></td>
 	</tr>
 </table>
-<div class="btn-group">
-	<%= button_to t('.checkout'), new_order_path, method: :get, class: "btn btn-primary btn-mini" %>
-	<%= button_to t('.empty'), cart, method: :delete, confirm: 'Are you sure?', class: "btn btn-inverse btn-mini" %>
+<div class="btn-group pull-right">
+	<%= link_to t('.checkout'), new_order_path, method: :get, class: "btn btn-small" %>
+	<%= link_to t('.empty'), cart, method: :delete, confirm: 'Are you sure?', class: "btn btn-small" %>
 </div>
