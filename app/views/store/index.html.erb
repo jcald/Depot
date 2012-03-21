@@ -1,19 +1,27 @@
+<div class="hero-unit">
+	<h1>Welcome!</h1>
+	<p>Welcome to pragmatic store, the best place that you can find any Ruby and Rails book...</p>
+</div>
+
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<% if @counter > 5%>
-<strong><%= pluralize(@counter, "check") %></strong>
-<% end %>
-<h1><%= t('.title_html') %></h1>
+<div class="page-header">
+	<h1><%= t('.title_html') %> <small>What are you looking for?</small></h1>
+</div>
 
-<% @products.each do |product| %>
-	<div class="entry">
-		<%= image_tag(product.image_url) %>
-		<h3><%= product.title %></h3>
-		<%= sanitize(product.description) %>
-		<div class="price_line">
-			<span class="price"><%= number_to_currency(product.price) %></span>
-			<%= button_to t('.add_html'), line_items_path(product_id: product), remote: true, class: 'btn' %>
-		</div>
-	</div>
-<% end %>
+<table class="table">
+	<% @products.each do |product| %>
+	<tr>
+		<td><%= image_tag(product.image_url) %></td>
+		<td>
+			<h3><%= product.title %></h3>
+			<%= sanitize(product.description) %>
+			<div class="price_line">
+				<span class="price"><%= number_to_currency(product.price) %></span>
+				<%= button_to t('.add_html'), line_items_path(product_id: product), remote: true, class: 'btn pull-right' %>
+			</div>
+		</td>
+	</tr>
+	<% end %>
+</table>
