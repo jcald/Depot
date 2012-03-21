@@ -9,6 +9,7 @@ en:
             questions: "Questions"
             news: "News"
             contact: "Contact"
+            products: "Products"
     store:
         index:
             title_html: "Your Pragmatic Catalogo"

@@ -6,6 +6,7 @@ es:
             questions: "Preguntas"
             news: "Noticias"
             contact: "Contacto"
+            products: "Productos"
     store:
         index:
             title_html: "Su catálogo de Pragmatic"

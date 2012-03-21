@@ -15,7 +15,8 @@
 				<a class="brand" href="#"><%= @page_title || t('.title') %></a>
 				
 				<ul class="nav">
-					<li><%= link_to 'Home', store_path %></li>
+					<li><%= link_to t('.home'), store_path %></li>
+					<li><%= link_to t('.products'), products_path %></li>
 				</ul>
 				
 			</div>

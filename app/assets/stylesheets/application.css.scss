@@ -14,7 +14,7 @@
  *= require_tree .
 */
 
-#banner {
+/*#banner {
   background: #9c9;
   padding: 10px;
   border-bottom: 2px solid;
@@ -43,17 +43,17 @@
     margin-left: 17em;
     padding: 1em;
     background: white;
-  }
+  }*/
 
 //#START:side
-  #side {
+  /*#side {
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #141;*/
 
 /* START_HIGHLIGHT */
-    form, div {
+/*    form, div {
       display: inline;
     }  
  
@@ -70,10 +70,10 @@
         border-bottom: 1px dotted #595;
         margin-bottom: 10px;
       }
-    }
+    }*/
 
 /* END_HIGHLIGHT */
-    ul {
+    /*ul {
       padding: 0;
 
       li {
@@ -85,44 +85,6 @@
         }
       }
     }
-  }
+  }*/
 //#END:side
-}
-
-//#START:form
-.depot_form {
-  fieldset {
-    background: #efe;
-
-    legend {
-      color: #dfd;
-      background: #141;
-      font-family: sans-serif;
-      padding: 0.2em 1em;
-    }
-  }
-
-  form {
-    label {
-      width: 5em;
-      float: left;
-      text-align: right;
-      padding-top: 0.2em;
-      margin-right: 0.1em;
-      display: block;
-    }
-
-    select, textarea, input {
-      margin-left: 0.5em;
-    }
-
-    .submit {
-      margin-left: 4em;
-    }
-
-    br {
-      display: none
-    }
-  }
-}
-//#END:form
+/*}*/
